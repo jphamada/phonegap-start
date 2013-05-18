@@ -20,18 +20,31 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=yes" />
+        <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>InfoMtb</title>
-        <style type="text/css">
+        <title>Info.Mtb</title>
+          <style type="text/css">
             html, body, iframe {
-               
-                height: 80%;
+                margin: 0;
+                padding: 0;
+                height: 100%;
             }
         </style>
     </head>
     <body>
-      <iframe width="100%" height="80%" src="http://www.infomtb.com.ar"></iframe>
+        <div class="app">
+            <h1>InfoMtb</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <iframe width="100%" height="100%" src="http://www.infomtb.com.ar"></iframe>
     </body>
 </html>
